@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e9f4;
+}
+
+.searchBar {
+  width: 400px;
+  height: 120px;
+  padding: 15px;
+  background: #e2e9f4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow:
+    5px 5px 10px rgba(190, 190, 190, 0.4),
+    -2px -2px 0 rgba(255, 255, 255, 0.4),
+    2px 2px 6px rgba(60, 75, 102, 0.1),
+    -3px -3px 6px rgba(255, 255, 255, 0.8);
+}
+
+.searchBar__title {
+  font-size: 18px;
+  font-family: "Hind", sans-serif;
+  color: #3c4b66;
+  font-weight: 400;
+  color: transparent;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, #6b7b8f, #3c4b66);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.searchBar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  /* flex-grow: 1; */
+}
+
+.searchBar__btn {
+  width: 50px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: #6d7f8f;
+  background: transparent;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.055),
+    -2px -2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.searchBar__btn:focus {
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.055),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.6);
+  transform: scale(0.95);
+}
+
+.searchBar__text {
+  width: 82%;
+  outline: none;
+  border: none;
+  border-radius: inherit;
+  background-color: #e3edf7;
+  border-radius: 8px;
+  color: #a9b8c9;
+  padding: 0px 30px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow:
+    inset 3px 3px 5px rgba(0, 0, 0, 0.15),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.searchBar__text:focus {
+  color: #6d7f8f;
+}
+
+.searchBar__text::placeholder {
+  color: #6d7f8f;
+}
